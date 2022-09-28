@@ -1,4 +1,6 @@
 @import 'config';
+@import 'btnConfig';
+@import 'utilities';
 
 * {
   box-sizing: border-box;
@@ -7,15 +9,12 @@
 }
 
 body {
-  background-color: $light-color;
+  background-color: $primary-color;
   font-family: $font-stack;
   line-height: 1;
-}
-
-.box {
-  background-color: $primary-color;
   color: white;
 }
+
 
 footer {
   text-align: center;
@@ -26,21 +25,24 @@ footer {
 
 img {
   border-radius: 50%;
+  max-width: 100%;
+  height: auto;
 }
 
 a {
   text-decoration: none;
 }
 
-.hero {
-  // This is where the bulk of the SCSS styling needs to be done
+.flex-container {
+  display: flex;
+}
 
-  // Take a look at the other files we've built already. How can they be useful here?
+.flex-child1 {
+  flex: 1;
+}
 
-  // Also, take time to review the features of SCSS we've already covered:
-  // 1. $variables
-  // 2. nesting (dont forget about the ampersand (&) parent selector!)
-  // 3. At-Rules
+.flex-child2 {
+  margin-right: 20px;
 }
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
