@@ -1,3 +1,4 @@
+@import 'config';
 
 * {
   box-sizing: border-box;
@@ -9,6 +10,18 @@ body {
   background-color: $light-color;
   font-family: $font-stack;
   line-height: 1;
+}
+
+.box {
+  background-color: $primary-color;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: $light-color;
+  color: $primary-color;
 }
 
 img {
